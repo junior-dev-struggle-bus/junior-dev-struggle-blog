@@ -17,7 +17,6 @@ class BlogIndex extends React.Component {
         <SEO title="All posts" />
         {/* <Bio /> */}
         <img src="https://www.azavea.com/wp-content/uploads/2014/02/Wat-duck-%E2%80%94-Destroy-All-Software-Talks.png"/>
-        <h4 style={{marginTop:0}}>Come Soon to a Dev Community Near You</h4>
         <a href = "https://juniordevstrugglebus.com/">
           <h5 style={{marginTop:0}}>Juniordevstrugglebus.com/</h5>
         </a>
