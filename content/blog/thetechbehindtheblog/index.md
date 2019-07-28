@@ -1,6 +1,7 @@
 ---
 title: An Introduction to the Junior Dev Struggle Blog
 date: "2019-07-27T22:12:03.284Z"
+description: An Introduction to the Junior Dev Struggle Blog
 ---
 
 The Junior Dev Struggle Blog is live!!
@@ -55,7 +56,7 @@ Every new folder within the `/blog/` directory will be interpretted as a new blo
 #### The Markdown File
 The markdown file has two sections - the header and the body. The metadata for the post lives in the header, and the actual post itself lives in the body. The head of this post's .md life is below. For more information on how markdown syntax is built into HTML, see the [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-This post's markdown file lives [here]()
+This post's markdown file lives [here](https://github.com/junior-dev-struggle-bus/junior-dev-struggle-blog/blob/master/content/blog/thetechbehindtheblog/index.md)
 
 
 
