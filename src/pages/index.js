@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
         <a href = "https://juniordevstrugglebus.com/">
           <h5 style={{marginTop:0}}>Juniordevstrugglebus.com/</h5>
         </a>
-        {/* {posts.map(({ node }) => {
+        {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -42,7 +42,7 @@ class BlogIndex extends React.Component {
               />
             </div>
           )
-        })} */}
+        })}
       </Layout>
     )
   }
