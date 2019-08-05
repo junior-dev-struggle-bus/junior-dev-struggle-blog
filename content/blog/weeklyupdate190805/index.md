@@ -13,4 +13,4 @@ One of the goals we've collectively decided to throw our weight behind is better
 
 We are also looking for passionate people to help in administrative duties and getting folks more involved in general. One such position is a Community Outreach Organizer. This is how yours truly started out in an official capacity with JDSB. This person would help with writing up announcements, event organitation on Meetup.com, or reaching to others that have expressed a desire to be more involved. Perhaps, even, branding your name on the bottom of these weekly updates. :)
 
-If getting involved in this way sounds like a good time to you, or you're interested in becoming more involved in another manner, please reach out to Nate, Mark, or myself on the JDSB Slack. Or just yell at us in #general. We'll see ya!
+If getting involved in this way sounds like a good time to you, or you're interested in becoming more involved in another manner, please reach out to Nate, Mark, or myself on the JDSB Slack. Or just yell at us in [#general](https://jdsb.slack.com/messages/CK8KJ5AAF). We'll see ya!
