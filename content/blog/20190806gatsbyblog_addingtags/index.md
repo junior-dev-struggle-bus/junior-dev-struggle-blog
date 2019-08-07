@@ -24,9 +24,9 @@ After
 Simple as that. 
 
 ## Add the tag attribute to your GraphQL query
-So now that your blog post has a tag, we need to tell the GraphQL query in the templates/blog-post.js to ask for the tag attribute in its query. The post content is then stored in this.props.data.markdownRemarks. The metadat attributes live in ...markdownRemarks.frontmatter, with each attribute receiving its own node. 
+So now that your blog post has a tag, we need to tell the GraphQL query in the templates/blog-post.js to ask for the tag attribute in its query. The post content is then stored in this.props.data.markdownRemarks. The metadata attributes live in `...markdownRemarks.frontmatter`, with each attribute receiving its own node. 
 
-To update the GraphQL query, in temploates/blog-posts.js, scroll down to the GraphQL query named pageQuery. Following the hierarchy noted above, and under author, add tags. 
+To update the GraphQL query, in `templates/blog-posts.js`, scroll down to the GraphQL query named pageQuery. Following the hierarchy noted above, and under author, add tags. 
 
 Before
 ![](./beforeTagsGql.png)
@@ -36,11 +36,11 @@ After
 And legitimately - that's in. Your tags attribute will now live up in props, just like a prop standarly passed in React. 
 
 ## Testing that it worked
-Did it work? Let's see. Let's go to our blog-post.js template at add the tag to confirm it's added to props as expected. For funzies, I added a Tags section below the rest of the post metadata on the in blog-post.js, using a map statement to loop through all the tags. 
+Did it work? Let's see. Let's go to our `blog-post.js` template at add the tag to confirm it's added to props as expected. For funzies, I added a Tags section below the rest of the post metadata on the in `blog-post.js`, using a map statement to loop through all the tags. 
 
 ![](./testingAddingToBlog.png)
 
-In the markdown file we have 'aboutTheBlog' and 'thisJustGotMeta' - and that's what we see on our post! 
+In the markdown file we have `aboutTheBlog` and `thisJustGotMeta` - and that's what we see on our post! 
 
 ![](./finalResult.png)
 
