@@ -3,6 +3,7 @@ title: An Introduction to the Junior Dev Struggle Blog
 date: "2019-07-27T22:12:03.284Z"
 description: An Introduction to the Junior Dev Struggle Blog
 author: Nate Spilman
+# tags: ['aboutTheBlog']
 ---
 
 The Junior Dev Struggle Blog is live!!

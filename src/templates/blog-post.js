@@ -10,7 +10,6 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
-    console.log(post.frontmatter)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -34,8 +33,11 @@ class BlogPostTemplate extends React.Component {
           }}
         >
         {post.frontmatter.author} - 
-        {post.frontmatter.date}
+        {post.frontmatter.date} 
+
+       
         </p>
+
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -91,6 +93,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         author
+        tags
       }
     }
   }
