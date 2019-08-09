@@ -1,10 +1,10 @@
 ---
-title: An Introduction to the Junior Dev Struggle Blog
-date: "2019-07-27T22:12:03.284Z"
-description: An Introduction to the Junior Dev Struggle Blog
+title: Python for Knowledge Workers
+date: "2019-08-08T22:12:03.284Z"
+description: Code snippets to dramatically improve your daily workflows
 author: Nate Spilman
-tags: ['aboutTheBlog']
-published: true
+tags: ['Python']
+published: false
 ---
 
 The Junior Dev Struggle Blog is live!!

@@ -34,8 +34,6 @@ class BlogPostTemplate extends React.Component {
         >
         {post.frontmatter.author} - 
         {post.frontmatter.date} 
-
-       
         </p>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />

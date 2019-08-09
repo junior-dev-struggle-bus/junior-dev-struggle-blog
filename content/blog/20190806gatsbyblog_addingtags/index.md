@@ -4,6 +4,8 @@ date: "2019-08-06T22:12:03.284Z"
 description: Making the blog more scalable with tags !
 author: Nate Spilman
 tags: ['aboutTheBlog','thisJustGotMeta']
+published: true
+
 ---
 
 Today I'll be adding tags to the metadata of our blog posts. The blog is in its infancy, and it's important to think about archicture for scalability. With tags, authors can categorize their posts, which will allow for searching and filtering down the road! 

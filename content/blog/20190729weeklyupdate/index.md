@@ -5,6 +5,7 @@ description: The JDSB Weekly Community Update - Blog edition!
 author: Brett Hurst
 tags: ['weeklyUpdate','tagTwo']
 newThing: this is a new thing
+published: true
 ---
 
 Let’s get right to it, friends!

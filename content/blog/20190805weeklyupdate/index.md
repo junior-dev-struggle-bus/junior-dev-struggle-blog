@@ -3,6 +3,8 @@ title: JDSB Weekly Update - 08/05/2019
 date: "2019-08-05"
 description: Blog edition!
 author: Brett Hurst
+published: true
+
 ---
 
 A very merry August to all of you!

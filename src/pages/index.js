@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -18,10 +17,11 @@ class BlogIndex extends React.Component {
         {/* <Bio /> */}
         <img src="https://www.azavea.com/wp-content/uploads/2014/02/Wat-duck-%E2%80%94-Destroy-All-Software-Talks.png"/>
         <a href = "https://juniordevstrugglebus.com/">
-          <h5 style={{marginTop:0}}>Juniordevstrugglebus.com/</h5>
+          <h5 style={{padding:'1em'}}>Juniordevstrugglebus.com/</h5>
         </a>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+          if(node.frontmatter.published){
           return (
             <div key={node.fields.slug}>
               <h3
@@ -40,8 +40,8 @@ class BlogIndex extends React.Component {
                 }}
               />
             </div>
-          )
-        })}
+          )}
+        })  }
       </Layout>
     )
   }
@@ -67,6 +67,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            published
           }
         }
       }
