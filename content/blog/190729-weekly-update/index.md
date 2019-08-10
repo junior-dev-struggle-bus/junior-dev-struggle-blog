@@ -3,6 +3,7 @@ title: JDSB Weekly Update - 07/29/2019
 date: "2019-07-29"
 description: The JDSB Weekly Community Update - Blog edition!
 author: Brett Hurst
+published: true
 ---
 
 Let’s get right to it, friends!
