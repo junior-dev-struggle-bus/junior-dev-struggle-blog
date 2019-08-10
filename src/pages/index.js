@@ -15,33 +15,34 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         {/* <Bio /> */}
-        <img src="https://www.azavea.com/wp-content/uploads/2014/02/Wat-duck-%E2%80%94-Destroy-All-Software-Talks.png"/>
-        <a href = "https://juniordevstrugglebus.com/">
-          <h5 style={{padding:'1em'}}>Juniordevstrugglebus.com/</h5>
+        <img src="https://www.azavea.com/wp-content/uploads/2014/02/Wat-duck-%E2%80%94-Destroy-All-Software-Talks.png" />
+        <a href="https://juniordevstrugglebus.com/">
+          <h5 style={{ padding: '1em' }}>Juniordevstrugglebus.com/</h5>
         </a>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
-          if(node.frontmatter.published){
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )}
-        })  }
+          if (node.frontmatter.published) {
+            return (
+              <div key={node.fields.slug}>
+                <h3
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                  }}
+                >
+                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+                <small>{node.frontmatter.date}</small>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </div>
+            )
+          }
+        })}
       </Layout>
     )
   }
