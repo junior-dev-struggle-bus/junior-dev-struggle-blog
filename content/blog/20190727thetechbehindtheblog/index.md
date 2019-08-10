@@ -29,7 +29,7 @@ The blog itself started as a clone of Kyle Mathews' [gatsby-starter-blog](https:
 The website is developed using the [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start). Its Github repo is [here](https://github.com/junior-dev-struggle-bus/junior-dev-struggle-blog), and it is hosted on [Netlify](https://www.netlify.com/). 
 
 #### The Basics of the Gatsby Build
-The starter template from which we cloned did some of the heavy lifting for us. I'm going to go over the starter stuff that we in the repo currently - if you spin un a new Gatsby application (gatsby new mynewapplication), you'll be missing some of this code. Below you'll see the files and directories. 
+The starter template from which we cloned did some of the heavy lifting for us. I'm going to go over the starter stuff that we have in the repo currently - if you spin up a new Gatsby application (e.g. `gatsby new mynewapplication` in your terminal), you'll be missing some of this code. Below you'll see the files and directories. 
 
 ![](./directoriesAndFiles.png)
 
