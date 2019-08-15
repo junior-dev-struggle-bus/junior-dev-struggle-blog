@@ -192,7 +192,7 @@ When typing this command in your project folder, Netlify will launch a server on
 `http://localhost:8888/.netlify/functions/helloWorld`
 `http://localhost:8888/.netlify/functions/goodbyeWorld`
 
-[You can read more about the Netlify CLI here](cli.netlify.com)
+[You can read more about the Netlify CLI here](https://cli.netlify.com)
 
 _Note that this is only confirmed to work with serverless JavaScript functions. Golang functions require a build step that may require more setup or further development from the Netlify team._
 
