@@ -4,34 +4,36 @@ date: "2019-08-14"
 description: Learn how to write and deploy a serverless JS function to Netlify in about the simplest way possible!
 author: Brett Hurst
 published: true
+tags: ['javascript', 'netlify', 'serverless functions', 'tutorial', 'guide']
 ---
 
-# JavaScriptNetlifyFunctions
+![Netlify logo](netlifylogo.png)
 
-![](netlifylogo.png)
-
-## Purpose
-
-This is a simple guide to writing and deploying your first Netlify Function using JavaScript and GitHub.
+This is a simple guide to writing and deploying your first Netlify Function using JavaScript and GitHub. You can visit the [source repository here](https://github.com/bhurstGH/JavaScriptNetlifyFunctions). This blog post is derived from the README file that can be found there and I will attempt to update this post should the repository ever be updated.
 
 Netlify makes it extremely easy to take advantage of AWS's serverless Lambda functions. They can currently be deployed with JavaScript and Go. If you're interested in the Go side of this process, head here: [GolangNetlifyFunctions](https://github.com/phoenixcoder/GolangNetlifyFunctions).
+
+The major sections of this guide provide a "Quick steps" section and a "Details" section. You can follow the quick steps if you want the bare bones instructions, or the Details sections for more in depth explanations.
+<hr>
 
 ## Contents
 
 - [Guide](#guide)
   - [Creating the project](#creating-the-project)
-    - [Quick steps](#quick-steps)
-    - [Details](#details)
-    - [Visual Checkpoint](#visual-checkpoint)
+      - [Quick steps](#quick-steps)
+      - [Details](#details)
+      - [Visual Checkpoint](#visual-checkpoint)
   - [Deploying the project](#deploying-the-project)
-    - [Quick steps](#quick-steps-1)
-    - [Details](#details-1)
+      - [Quick steps](#quick-steps-1)
+      - [Details](#details-1)
   - [Calling a function](#calling-a-function)
-    - [Quick steps](#quick-steps-2)
-    - [Details](#details-2)
+      - [Quick steps](#quick-steps-2)
+      - [Details](#details-2)
 - [Additional Info](#additional-info)
   - [Multiple Functions](#multiple-functions)
   - [Quick note on local function testing](#quick-note-on-local-function-testing)
+
+<hr>
 
 ## Guide
 
@@ -97,6 +99,8 @@ You should now have something similar to:
 
 ![helloWorld.js](03-create-helloworld.png)
 
+<hr>
+
 ### Deploying the project
 
 #### Quick steps:
@@ -145,6 +149,8 @@ When the site has finished the build and deploy process, you should see this:
 <img src="06-deploy-published.png" width="50%" height="50%">
 
 Congratulations! You've now written and deployed a serverless function to Netlify.
+
+<hr>
 
 ### Calling a function
 
