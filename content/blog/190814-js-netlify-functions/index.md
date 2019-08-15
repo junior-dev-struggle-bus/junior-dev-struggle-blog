@@ -57,14 +57,14 @@ Begin by creating a new GitHub repository, which you will eventually deploy. Fee
 
 The next step is to create a `netlify.toml` file in the root directory of your project. This file will instruct Netlify on which directory your Lambda functions will be stored in. Open the file in your editor and add:
 
-```
+```toml
 [build]
 functions = "./functions"
 ```
 
 Now you need to create the folder that the `netlify.toml` points to, so create `/functions` in your project directory. Once this is done, create and open a classic `helloWorld.js` file. This is where you will actually write your function:
 
-```
+```javascript
 exports.handler = function (event, context, callback) {
     // Do cool stuff here
 }
