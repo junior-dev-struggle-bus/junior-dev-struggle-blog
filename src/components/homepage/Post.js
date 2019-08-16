@@ -3,31 +3,30 @@ import { Link } from "gatsby"
 
 class Post extends React.Component {
   render() {
-    const node = this.props.node
-    const title = node.frontmatter.title || node.fields.slug
-    if (node.frontmatter.published) {
+    const { date, excerpt, slug, title, author } = this.props;
       return (
-        <article class="box post" style={{padding:"1em"}}>
+        <article className="box post" style={{padding:"1em"}}>
           <header>
             <h2 style={{margin:'.2em'}}>
-              <Link to={node.fields.slug}>{title}</Link>
+              <Link to={ slug }> { title } </Link>
             </h2>
-            <small style={{margin:0}}>{node.frontmatter.date}</small>
+            <small style={{margin:0}}>{ date }</small>
+            <br/>
+            <small style={{margin:0}}>{ author }</small>
           </header>
-          <Link class="image featured">
+          <Link to = {slug} className="image featured">
             <img src={"https://source.unsplash.com/1600x900/?duck?sig=" + Math.floor(Math.random() * 1000)}alt="" />
           </Link>
           <p style={{margin:'.6em'}}
             dangerouslySetInnerHTML={{
-              __html: node.frontmatter.description || node.excerpt,
+              __html: excerpt,
             }}
           />
-              <Link to={node.fields.slug} class="button icon solid fa-file">
+              <Link to={ slug } className="button icon solid fa-file">
                 Continue Reading
               </Link>
         </article>
       )
-    }
   }
 }
 
