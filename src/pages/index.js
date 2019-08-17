@@ -25,7 +25,7 @@ class BlogIndex extends React.Component {
       {
         title:"algorithms-anon.org/",
         url:"https://algorithms-anon.org",
-        content:"Keep your mind sharp with regular community written algorithm challenge. Join the message board and engage in brain teasers or solve for function of Big O. "
+        content:"Keep your mind sharp with regular community written algorithm challenges. Join the message board and engage in brain teasers or solve for function of Big O. "
       },
       {
         title:"The Slack Channel",

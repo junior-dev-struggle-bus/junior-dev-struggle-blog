@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-class BoxExcerpt extends React.Component {
+class BoxExcerptWithDate extends React.Component {
   render() {
       return (
         <article className="box excerpt">
@@ -22,4 +22,4 @@ class BoxExcerpt extends React.Component {
     }
 }
 
-export default BoxExcerpt
+export default BoxExcerptWithDate

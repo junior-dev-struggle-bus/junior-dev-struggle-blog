@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-class BoxExcerpt extends React.Component {
+class BoxHighlight extends React.Component {
   render() {
     const { title, content, img } = this.props
       return (
@@ -29,4 +29,4 @@ class BoxExcerpt extends React.Component {
     }
 }
 
-export default BoxExcerpt
+export default BoxHighlight
