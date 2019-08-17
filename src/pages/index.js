@@ -51,10 +51,11 @@ class BlogIndex extends React.Component {
               <div className="row">
                 <div id="content" className="col-8 col-12-medium">
                   {posts.map(({ node }) => {
-                    const title = node.frontmatter.title || node.fields.slug
-                    const {date, author}  = node.frontmatter
-                    const slug = node.fields.slug   
                     console.log(node)
+                    const title = node.frontmatter.title || node.fields.slug
+                    const { date, author }  = node.frontmatter
+                    const excerpt = node.excerpt
+                    const slug = node.fields.slug   
 
                     if (node.frontmatter.published) {
                       return (
@@ -64,6 +65,7 @@ class BlogIndex extends React.Component {
                           date = { date } 
                           slug = { slug } 
                           author = { author }
+                          excerpt = { excerpt }
                           />
                         </div>
                       )
@@ -83,7 +85,7 @@ class BlogIndex extends React.Component {
                           title = {title}
                           link = {url}
                           content = {content}
-                          key = {title}
+                          key = { title }
                            />
                       </li>                        
                         )

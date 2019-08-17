@@ -14,10 +14,10 @@ class Post extends React.Component {
             <br/>
             <small style={{margin:0}}>{ author }</small>
           </header>
-          <Link to = {slug} className="image featured">
+          <Link to = {slug} className="image featured" style={{marginBottom:".2em"}}>
             <img src={"https://source.unsplash.com/1600x900/?duck?sig=" + Math.floor(Math.random() * 1000)}alt="" />
           </Link>
-          <p style={{margin:'.6em'}}
+          <p style={{margin:'1em'}}
             dangerouslySetInnerHTML={{
               __html: excerpt,
             }}
