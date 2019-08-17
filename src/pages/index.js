@@ -6,6 +6,8 @@ import { Link, graphql } from "gatsby"
 import Post from "../components/homepage/Post"
 import BoxExcerpt from "../components/homepage/BoxExcerpt"
 import BoxHighlight from "../components/homepage/BoxHighlight"
+import { Helmet } from "react-helmet"
+
 
 // import { rhythm } from "../../../src/utils/typography"
 
@@ -37,6 +39,10 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title> { siteTitle } </title>
+        </Helmet>
         <div id="page-wrapper">
           <section id="header">
             <div className="container">
@@ -51,7 +57,6 @@ class BlogIndex extends React.Component {
               <div className="row">
                 <div id="content" className="col-8 col-12-medium">
                   {posts.map(({ node }) => {
-                    console.log(node)
                     const title = node.frontmatter.title || node.fields.slug
                     const { date, author }  = node.frontmatter
                     const excerpt = node.excerpt
