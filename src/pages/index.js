@@ -25,7 +25,7 @@ class BlogIndex extends React.Component {
         content:"Visit the Junior Dev Struggle Bus website for more information on the organzation, and opportunities to contribute to the community!"
       },
       {
-        title:"algorithms-anon.org/",
+        title:"algorithms-anon.org",
         url:"https://algorithms-anon.org",
         content:"Keep your mind sharp with regular community written algorithm challenges. Join the message board and engage in brain teasers or solve for function of Big O. "
       },
