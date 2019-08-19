@@ -31,8 +31,14 @@ class BlogIndex extends React.Component {
       },
       {
         title:"The Slack Channel",
-        url:"http://jdsb-slack-invite.herokuapp.com/",
+        url:"http://juniordevstrugglebus.com/slack",
         content:"Our Slack channel is the community's main platform of communication. In addition, we have community build bot applications, and lots of development opportunity."
+
+      },
+      {
+        title:"The Meetup Group",
+        url:"https://www.meetup.com/The-Junior-Dev-Struggle-Bus",
+        content:"The Junior Dev Struggle Bus posts regular meetings in Seattle, WA on Meetup.com. Come hang out, learn a few things and teach us a few things."
 
       }
     ]
@@ -43,6 +49,7 @@ class BlogIndex extends React.Component {
           <meta charSet="utf-8" />
           <title> { siteTitle } </title>
         </Helmet>
+
         <div id="page-wrapper">
           <section id="header">
             <div className="container">
