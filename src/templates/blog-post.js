@@ -27,9 +27,6 @@ class BlogPostTemplate extends React.Component {
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
         />
 
         <ul
