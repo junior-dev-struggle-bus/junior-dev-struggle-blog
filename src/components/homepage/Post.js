@@ -14,9 +14,9 @@ class Post extends React.Component {
             <br/>
             <small style={{margin:0}}>{ author }</small>
           </header>
-          <Link to = {slug} className="image featured" style={{marginBottom:".2em"}}>
-            <img src={"https://source.unsplash.com/1600x900/?duck?sig=" + Math.floor(Math.random() * 1000)}alt="" />
-          </Link>
+          {/* <Link to = {slug} className="featured" style={{marginBottom:".2em", display:'flex',alignItems:'center',justifyContent:'center'}}>
+            <img style = {{maxHeight:'200px',width:'auto'}}src={"https://source.unsplash.com/1600x900/?duck?sig=" + Math.floor(Math.random() * 1000)}alt="" />
+          </Link> */}
           <p style={{margin:'1em'}}
             dangerouslySetInnerHTML={{
               __html: excerpt,
