@@ -17,30 +17,16 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
           author={post.frontmatter.author}
         />
-        <h1
-          style={{
-            marginTop: rhythm(1),
-            marginBottom: 0,
-          }}
-        >
+        <h2 id="title">
           {post.frontmatter.title}
-        </h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-          }}
-        >
+        </h2>
+        <p>
         {post.frontmatter.author} - 
         {post.frontmatter.date} 
         </p>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
         />
 
         <ul
