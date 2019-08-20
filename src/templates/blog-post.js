@@ -24,9 +24,6 @@ class BlogPostTemplate extends React.Component {
           <section id="header">
             <div className="container">
               {/* <!-- Logo --> */}
-              <h1 id="logo">
-                <a href="index.html">Junior Dev Struggle Blog</a>
-              </h1>
             </div>
           </section>
 
