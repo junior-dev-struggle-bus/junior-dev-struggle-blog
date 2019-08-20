@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Sidebar from "../components/blogpost/Sidebar"
+import Post from "../components/blogpost/Post"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,38 +18,8 @@ class BlogPostTemplate extends React.Component {
       {/* <!-- Header --> */}
       <section id="header">
           <div className="container">
-
               {/* <!-- Logo --> */}
-              <h1 id="logo"><a href="index.html">Strongly Typed</a></h1>
-              <p>A responsive HTML5 site template. Manufactured by HTML5 UP.</p>
-
-              {/* <!-- Nav --> */}
-              <nav id="nav">
-                  <ul>
-                      <li><a className="icon solid fa-home" href="index.html"><span>Introduction</span></a></li>
-                      <li>
-                          <a href="#" className="icon fa-chart-bar"><span>Dropdown</span></a>
-                          <ul>
-                              <li><a href="#">Lorem ipsum dolor</a></li>
-                              <li><a href="#">Magna phasellus</a></li>
-                              <li><a href="#">Etiam dolore nisl</a></li>
-                              <li>
-                                  <a href="#">Phasellus consequat</a>
-                                  <ul>
-                                      <li><a href="#">Magna phasellus</a></li>
-                                      <li><a href="#">Etiam dolore nisl</a></li>
-                                      <li><a href="#">Phasellus consequat</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="#">Veroeros feugiat</a></li>
-                          </ul>
-                      </li>
-                      <li><a className="icon solid fa-cog" href="left-sidebar.html"><span>Left Sidebar</span></a></li>
-                      <li><a className="icon solid fa-retweet" href="right-sidebar.html"><span>Right Sidebar</span></a></li>
-                      <li><a className="icon solid fa-sitemap" href="no-sidebar.html"><span>No Sidebar</span></a></li>
-                  </ul>
-              </nav>
-
+              <h1 id="logo"><a href="index.html">Junior Dev Struggle Blog</a></h1>
           </div>
       </section>
 
@@ -59,78 +30,7 @@ class BlogPostTemplate extends React.Component {
                   <Sidebar />
                   {/* <!-- Content --> */}
                   <div id="content" className="col-8 col-12-medium imp-medium">
-
-                      {/* <!-- Post --> */}
-                      <article className="box post">
-                          <header>
-                              <h2>Behold! This is the <strong>left sidebar</strong> layout<br />
-                                  with a sidebar on the left!</h2>
-                          </header>
-                          <span className="image featured"><img src="images/pic04.jpg" alt="" /></span>
-                          <h3>Left is the opposite of right</h3>
-                          <p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-                          ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-                          sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-                          in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                          magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-                          consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                          justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-                          mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-                                      Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-                          <p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
-                          Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-                          vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
-                          magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
-                          tristique at erat. Curabitur leo nibh, rutrum eu malesuada in, tristique
-                          at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-                          tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
-                                      magna tempus</p>
-                          <p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-                          ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-                          sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-                          in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                          consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                          in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                          magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-                          consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                          justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-                          mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-                                      Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-                          <h3>Accumsan lorem ipsum veroeros</h3>
-                          <p>Consequat Phasellus laoreet massa id in, tristique at erat lorem
-                          ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-                          consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                          justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-                                      mollis tortor congue. Sed quis mauris sit amet magna.</p>
-                          <p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-                          ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-                          sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-                          in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                          consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                          in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                          magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-                          consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                          justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-                          mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-                                      Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-                          <h3>Ligula suspcipit fusce veroeros</h3>
-                          <p>Nullam dolore etiam sed massa id in, tristique at erat lorem
-                          ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-                          consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                          justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-                                      mollis tortor congue. Sed quis mauris sit amet magna.</p>
-                          <p>Sed massa id justo mattis pharetra. Fusce suscipit
-                          ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-                          sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-                          in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                          consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                          in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                          magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-                          consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                          justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-                                      mollis tortor congue. Sed quis mauris sit amet magna accumsan.</p>
-                      </article>
-
+                    <Post/>
                   </div>
 
               </div>
