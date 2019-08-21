@@ -1,23 +1,21 @@
 import React from "react"
 
-class Post extends React.Component {
-  render() {
-    return (
-      <article className="box post">
-        <header>
-          <h2>{this.props.title}</h2>
-          <p>
-            {this.props.author} - {this.props.date}
-          </p>
-        </header>
-        {/* <span className="image featured">
-          <img src="images/pic04.jpg" alt="" />
-        </span> */}
-        <p>{this.props.description}</p>
-        <div dangerouslySetInnerHTML={{ __html: this.props.body }} />
-      </article>
-    )
-  }
+const Post = ({ title, author, description, date, body }) => {
+  return (
+    <article className="box post">
+      <header>
+        <h2>{title}</h2>
+        <p>
+          {author} - {date}
+        </p>
+      </header>
+      {/* <span className="image featured">
+      <img src="images/pic04.jpg" alt="" />
+    </span> */}
+      <p>{description}</p>
+      <div dangerouslySetInnerHTML={{ __html: body }} />
+    </article>
+  )
 }
 
 export default Post
