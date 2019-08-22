@@ -4,8 +4,7 @@ import { Link, graphql } from "gatsby"
 // import Layout from "../../../src/components/layout"
 // import SEO from "../../../src/components/seo"
 import Post from "../components/homepage/Post"
-import BoxExcerpt from "../components/homepage/BoxExcerpt"
-import BoxHighlight from "../components/homepage/BoxHighlight"
+import Sidebar from "../components/shared/Sidebar"
 import { Helmet } from "react-helmet"
 
 
@@ -85,27 +84,7 @@ class BlogIndex extends React.Component {
                   })}
 
                 </div>
-                <div id="sidebar" className="col-4 col-12-medium">
-                  <section>
-                    <ul className="divided">
-                    {boxExerpts.map(
-                      exerpt => {
-                      const {title,url, content} = exerpt
-                        return (
-                      <li>
-                          <BoxExcerpt 
-                          title = {title}
-                          link = {url}
-                          content = {content}
-                          key = { title }
-                           />
-                      </li>                        
-                        )
-                      }
-                    )}
-                    </ul>
-                  </section>
-                </div>
+                <Sidebar boxExerpts={boxExerpts}/>
                 <div id="copyright" className="container">
                     <ul className="links">
                       <li>&copy; Junior Dev Struggle Bus. All rights reserved.</li>
