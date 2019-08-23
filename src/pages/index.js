@@ -1,10 +1,11 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { StaticQuery, Link, graphql } from "gatsby"
 
 // import Layout from "../../../src/components/layout"
 // import SEO from "../../../src/components/seo"
 import Post from "../components/homepage/Post"
 import Sidebar from "../components/shared/Sidebar"
+import Header from "../components/shared/Header"
 import { Helmet } from "react-helmet"
 
 
@@ -50,13 +51,8 @@ class BlogIndex extends React.Component {
         </Helmet>
 
         <div id="page-wrapper">
-          <section id="header">
-            <div className="container">
-              <h1 id="logo">
-                <a href="/">{ siteTitle }</a>
-              </h1>
-            </div>
-          </section>
+          
+          <Header title={siteTitle}/>
 
           <section id="main">
             <div className="container">
