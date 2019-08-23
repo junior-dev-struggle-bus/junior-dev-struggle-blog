@@ -47,11 +47,6 @@ class BlogPostTemplate extends React.Component {
 
         <div id="page-wrapper">
           {/* <!-- Header --> */}
-          <section id="header">
-            <div className="container">
-              {/* <!-- Logo --> */}
-            </div>
-          </section>
 
           {/* <!-- Main --> */}
           <section id="main">
