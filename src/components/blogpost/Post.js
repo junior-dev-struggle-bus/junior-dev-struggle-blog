@@ -4,7 +4,7 @@ const Post = ({ title, author, description, date, body }) => {
   return (
     <article className="box post">
      <header style={{marginBottom:'2em'}}>
-          <h2 style={{marginBottom:0}}>{this.props.title}</h2>
+          <h2 style={{marginBottom:0}}>{title}</h2>
         {description}
           <h6>
             {author}
