@@ -5,12 +5,12 @@ const Post = ({ title, author, description, date, body }) => {
     <article className="box post">
      <header style={{marginBottom:'2em'}}>
           <h2 style={{marginBottom:0}}>{this.props.title}</h2>
-        {this.props.description}
+        {description}
           <h6>
-            {this.props.author}
+            {author}
           </h6>
           <h6>
-          {this.props.date}
+          {date}
           </h6>
         </header>
       {/* <span className="image featured">
