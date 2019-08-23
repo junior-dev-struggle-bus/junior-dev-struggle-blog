@@ -18,31 +18,26 @@ function Search({ searchIndex }) {
     const search = (e) => {
         setQuery(e.target.value)
         index = getOrCreateIndex();
-        console.log(query)
         let resultsArr = index.search(e.target.value, { expand: true })
-        setResults(resultsArr.map(({ref}) => {
+        setResults(resultsArr.map(({ ref }) => {
             return index.documentStore.getDoc(ref)
         }))
-        console.log("RESULTS", results)
     }
 
     return (
         <div>
             <input
-
                 type="text"
                 placeholder="Search..."
                 value={query}
                 onChange={search}
-                />
-            <ul
-
-            >
+            />
+            <ul>
                 {results.map(page => (
                     <li key={page.id}>
                         <Link to={page.slug}>{page.title}</Link>
                         {` (author:) ` + page.author}
-                        {page.tags ? ` - (tags:) ` + page.tags.join(`, `) : '' }
+                        {page.tags ? ` - (tags:) ` + page.tags.join(`, `) : ''}
                     </li>
                 ))}
             </ul>
