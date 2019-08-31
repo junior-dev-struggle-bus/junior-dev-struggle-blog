@@ -81,6 +81,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         fields: [`title`, `tags`, 'author', 'html'],
