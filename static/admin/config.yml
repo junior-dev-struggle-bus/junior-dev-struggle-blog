@@ -21,4 +21,4 @@ collections:
       # - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Published", name: "Published", widget: "boolean", default: false}
+      - {label: "Published", name: "published", widget: "boolean", default: false}
