@@ -10,16 +10,16 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/src/pages`,
+      name: 'pages',
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: `${__dirname}/src/assets`,
         name: `assets`,
       },
     },
@@ -69,7 +69,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/struggleBusFavicon.png`,
+        icon: `src/assets/struggleBusFavicon.png`,
       },
     },
     `gatsby-plugin-offline`,
