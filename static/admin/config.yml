@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: cms-dev # Branch to update (optional; defaults to master)
+  branch: cms # Branch to update (optional; defaults to master)
   # repo: https://github.com/junior-dev-struggle-bus/junior-dev-struggle-blog.git # Path to your GitHub repository
 
 media_folder: static/images
