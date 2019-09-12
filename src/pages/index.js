@@ -53,9 +53,11 @@ class BlogIndex extends React.Component {
         <div id="page-wrapper">
           <section id="header">
             <div className="container">
-              <h1 id="logo">
-                <a href="/">{ siteTitle }</a>
-              </h1>
+              <h1 id="logo">{ siteTitle } 
+                <a href="https://github.com/junior-dev-struggle-bus/junior-dev-struggle-blog/issues/30" title ="GitHub"target="_blank"  
+                               
+                >BLOG</a>  
+                              </h1>
             </div>
           </section>
 
@@ -135,12 +137,12 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength:200)
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MM, YYYY")
             title
             author
             description

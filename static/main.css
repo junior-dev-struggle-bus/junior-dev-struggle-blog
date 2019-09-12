@@ -107,7 +107,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
-		text-transform: uppercase;
+		text-transform: camelcase;
 		color: #888;
 	}
 
@@ -137,8 +137,9 @@ input, select, textarea {
 		-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		color: #666;
-		text-decoration: none;
+		text-transform: camelcase;
 		border-bottom: solid 1px #ddd;
+		
 	}
 
 		a strong {
@@ -148,13 +149,34 @@ input, select, textarea {
 			transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		}
 
+	
+	
 		a:hover {
-			color: #ed786a;
-			border-bottom-color: rgba(255, 255, 255, 0);
+			color:rgb(139, 36, 36);
+			
+			text-decoration: none;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: medium;
+			
 		}
+		
+		a:link{
+			color:rgb(139, 36, 36);
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: medium;
+			
 
+		}
+		a:visited{
+			
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: medium;
+			
+		}
+		
+		
 			a:hover strong {
-				color: #ed786a;
+				color: #13da34;
 			}
 
 	strong, b {
@@ -1771,7 +1793,7 @@ input, select, textarea {
 		display: inline-block;
 		background: #ed786a;
 		color: #fff !important;
-		text-transform: uppercase;
+		text-transform:uppercase;
 		border-radius: 4px;
 		border: 0;
 		outline: 0;
