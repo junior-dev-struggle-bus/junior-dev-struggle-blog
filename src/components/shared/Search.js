@@ -39,6 +39,7 @@ function Search({ searchIndex }) {
                 onChange={search}
             />
             <ul>
+
                 {publishedResults.map(page => (
                     <li key={page.id} style={{listStyle:"none"}}>
                         <Link to={page.slug}>{page.title}</Link>
