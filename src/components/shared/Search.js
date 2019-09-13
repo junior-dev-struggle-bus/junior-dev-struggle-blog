@@ -34,10 +34,13 @@ function Search({ searchIndex }) {
             />
             <ul>
                 {results.map(page => (
-                    <li key={page.id}>
+                    <li key={page.id} style={{listStyle:"none"}}>
                         <Link to={page.slug}>{page.title}</Link>
-                        {` (author:) ` + page.author}
-                        {page.tags ? ` - (tags:) ` + page.tags.join(`, `) : ''}
+                        <b> author: </b> {page.author}
+                        {page.tags &&
+                        <span>
+                            <b> - tags: </b> {page.tags.join(`, `)}
+                        </span>}
                     </li>
                 ))}
             </ul>
