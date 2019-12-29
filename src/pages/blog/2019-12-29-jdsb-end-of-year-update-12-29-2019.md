@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: JDSB End of Year Update - 12/29/2019
-date: 2019-12-22T20:37:19.716Z
+date: 2019-12-29T20:37:19.716Z
 description: Let's take a moment.
 tags:
   - Weekly Update
